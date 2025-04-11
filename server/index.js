@@ -40,7 +40,9 @@ app.post("/send", async (req, res) => {
     res.status(500).json({ success: false, message: "Failed to send email." });
   }
 });
-
+app.get("/", (req, res) => {
+  res.send("Backend is running on Render!");
+});
 app.listen(PORT, () => {
   console.log(`✅ Server listening at http://localhost:${PORT}`);
 });
