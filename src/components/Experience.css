@@ -1,0 +1,175 @@
+.experience {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #000000, #1c1c1c);
+  color: white;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  color: #66fcf1;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #45a29e;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-left: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #66fcf1;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00000088;
+  transition: transform 0.3s ease;
+  margin-left: 40px;
+  position: relative;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* Timeline Text Content */
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: #080808;
+}
+
+.timeline-content .company-name {
+  font-size: 1.1rem;
+  color: #66fcf1;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content .description p {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+/* === Date on Right Side === */
+.year {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #45a29e;
+  background: #0b0c10;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #0b0c10;
+}
+
+/* Skill Icons Right Side */
+.skill-icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 2rem;
+}
+
+/* === Icon Styling === */
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px white);
+}
+
+.icon.python {
+  color: #306998;
+}
+
+.icon.jenkins {
+  color: #cc342d;
+}
+
+.icon.aws {
+  color: #ff9900;
+}
+
+.icon.react {
+  color: #61dbfb;
+}
+
+.icon.git {
+  color: #f1502f;
+}
+
+.icon.docker {
+  color: #2496ed;
+}
+
+.icon.grad {
+  color: #ffe600;
+}
+
+.icon.code {
+  color: #38bdf8;
+}
+
+.icon.db {
+  color: #4db33d;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .timeline-content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .year,
+  .skill-icons {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .skill-icons {
+    justify-content: flex-start;
+  }
+}
