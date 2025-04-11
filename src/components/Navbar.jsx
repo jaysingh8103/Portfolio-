@@ -50,8 +50,8 @@ const Navbar = () => {
           ))}
           <li className="nav-item">
             <a
-              href="/assets/Jaypal_Singh.pdf"
-              download
+              href="http://localhost:5000/download-cv"
+              
               className="cv-btn"
               onClick={closeMenu}
             >

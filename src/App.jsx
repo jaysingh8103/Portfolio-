@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
-import LoadingScreen from './components/LoadingScreen'
+import LoadingScreen from './components/LoadingScreen';
 import ScrollProgress from './components/ScrollProgress';
 import Education from './components/Education';
 
@@ -15,34 +15,34 @@ import './App.css';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);           // For login info
+  const [isChatOpen, setIsChatOpen] = useState(false); // Toggle chat
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); 
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="app">
-    
       {loading ? (
         <LoadingScreen />
       ) : (
         <>
-        
-          <ScrollProgress/>
+          <ScrollProgress />
           <Navbar />
           <Intro />
-          
           <About />
-          <Education/>
+          <Education />
           <Experience />
           <Skills />
           <Projects />
           <Contact />
           <Footer />
+
         </>
       )}
     </div>

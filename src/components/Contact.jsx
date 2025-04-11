@@ -39,9 +39,9 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-
+    
       const data = await res.json();
-
+    
       if (data.success) {
         toast.success("🚀 Message sent successfully!", { position: "bottom-right" });
         setForm({ name: "", email: "", message: "" });
@@ -54,6 +54,7 @@ const Contact = () => {
     } finally {
       setLoading(false);
     }
+    
   };
 
   return (

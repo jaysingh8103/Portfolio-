@@ -11,10 +11,10 @@
   background: linear-gradient(135deg, #0072ff, #00c6ff);
   color: white;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  width: 42px;
-  height: 42px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  width: 46px;
+  height: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,14 +25,21 @@
 
 .brand-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #ffffff;
   background: linear-gradient(to right, #ffffff, #c0c0c0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
   animation: fadeInSlide 1.5s ease;
+}
+
+/* Hide brand text on small screens */
+@media (max-width: 600px) {
+  .brand-text {
+    display: none;
+  }
 }
 
 @keyframes fadeInScale {

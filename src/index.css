@@ -1,0 +1,15 @@
+.jp-circle {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 114, 255, 0.4);
+    animation: fadeInScale 1.2s ease forwards;
+  }

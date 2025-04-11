@@ -11,16 +11,15 @@ import {
   SiGrafana,
   SiHelm,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import "./Intro.css";
-
 import {
+  FaAws,
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
   FaFacebook,
-  FaGithub,
+  FaGithub as FaGit,
 } from "react-icons/fa";
+import "./Intro.css";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -52,16 +51,16 @@ const devopsIcons = [
 ];
 
 const iconColors = [
-  "#2496ED", // Docker
-  "#D24939", // Jenkins
-  "#326CE5", // Kubernetes
-  "#FF9900", // AWS
-  "#623CE4", // Terraform
-  "#181717", // GitHub
-  "#EE0000", // Ansible
-  "#E6522C", // Prometheus
-  "#F46800", // Grafana
-  "#277A9F", // Helm
+  "#2496ED",
+  "#D24939",
+  "#326CE5",
+  "#FF9900",
+  "#623CE4",
+  "#181717",
+  "#EE0000",
+  "#E6522C",
+  "#F46800",
+  "#277A9F",
 ];
 
 const Intro = () => {
@@ -73,7 +72,7 @@ const Intro = () => {
       initial="hidden"
       animate="visible"
     >
-      {/* Animated Background */}
+      {/* Floating Icons Background */}
       <div className="intro-bg">
         <ul className="icons">
           {devopsIcons.map((Icon, index) => (
@@ -91,7 +90,12 @@ const Intro = () => {
       {/* Main Content */}
       <div className="intro-content">
         <motion.div className="profile-wrapper" whileHover={{ scale: 1.05 }}>
-          <img src="/assets/devops.png" alt="DevOps" className="profile-pic" />
+          <img
+            src="/assets/pro-2.jpg"
+            alt="Profile"
+            className="profile-pic"
+            onError={(e) => (e.target.style.display = "none")}
+          />
         </motion.div>
 
         <motion.div className="intro-text" variants={itemVariants}>
@@ -100,57 +104,56 @@ const Intro = () => {
             <span className="highlighted-name">Jaypal Singh Sisodiya</span>
           </motion.h1>
 
-          <motion.p variants={itemVariants}>
-            Building scalable, secure infrastructure with Terraform, Docker,
-            Jenkins & AWS.
+          <motion.p variants={itemVariants} className="typing-effect">
+            Cloud & DevOps learner | Passionate about scalable and secure
+            deployments
           </motion.p>
 
           <motion.div className="intro-buttons" variants={itemVariants}>
             <motion.a
-              href="/assets/Jaypal_Singh.pdf"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
+              href="http://localhost:5000/download-cv"
               className="intro-btn"
               whileHover={{ scale: 1.1 }}
             >
-              Download CV
+              📄 Download CV
             </motion.a>
             <motion.a
               href="#contact"
               className="intro-btn secondary"
               whileHover={{ scale: 1.1 }}
             >
-              Contact Me
+              📬 Contact Me
             </motion.a>
           </motion.div>
+
+          {/* Social Links */}
           <motion.div className="social-icons" variants={itemVariants}>
             <a
               href="https://github.com/jaysingh8103"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="social-icon" />
+              <FaGit className="social-icon" />
             </a>
             <a
-              href="www.linkedin.com/in/jaypal-singh-sisodiya-6148a5250"
+              href="https://www.linkedin.com/in/jaypal-singh-sisodiya-6148a5250"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin className="social-icon" />
             </a>
-            <a href="jaypals840@gmail.com">
+            <a href="mailto:jaypals840@gmail.com">
               <FaEnvelope className="social-icon" />
             </a>
             <a
-              href="/"
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram className="social-icon" />
             </a>
             <a
-              href="/"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
