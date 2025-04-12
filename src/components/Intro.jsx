@@ -111,7 +111,7 @@ const Intro = () => {
 
           <motion.div className="intro-buttons" variants={itemVariants}>
             <motion.a
-              href="http://localhost:5000/download-cv"
+              href="https://portfolio-jaypal.onrender.com/download-cv"
               className="intro-btn"
               whileHover={{ scale: 1.1 }}
             >

@@ -50,7 +50,7 @@ const Navbar = () => {
           ))}
           <li className="nav-item">
             <a
-              href="http://localhost:5000/download-cv"
+              href="https://portfolio-jaypal.onrender.com/download-cv"
               
               className="cv-btn"
               onClick={closeMenu}
