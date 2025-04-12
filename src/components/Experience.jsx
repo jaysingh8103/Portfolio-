@@ -7,20 +7,35 @@ import { useInView } from 'react-intersection-observer';
 const experienceData = [
   {
     role: "Python Developer Intern",
-    company: "HDFC Bank | IT / Computers - Software",
+    company: "HDFC Bank | Remote",
     description: (
       <>
-        <p>- Automate with Python: Write scripts to automate tasks and processes.</p>
-        <p>- Integrate Jenkins: Set up and manage CI/CD pipelines with Jenkins.</p>
-        <p>- Learn DevOps: Gain experience in Python, Jenkins, and DevOps workflows.</p>
+        <p>- Built an automated code optimization and error detection tool using Python to improve code quality and reduce manual effort.</p>
+        <p>- Gained practical experience with AWS, exploring cloud infrastructure and deployment concepts.</p>
+        <p>- Strengthened understanding of DevOps principles including CI/CD, containerization, and infrastructure automation.</p>
+        <p>- Started writing shell and Python scripts to automate routine tasks and system operations, improving internal tool reliability.</p>
       </>
     ),
-    skills: [
-      <FaPython key="python" className="icon python" />,
-      <FaTools key="jenkins" className="icon jenkins" />,
-      <FaAws key="aws" className="icon aws" />,
-    ],
-    year: "28 Feb, 2025 - Present",
+    // skills: [
+    //   <FaPython key="python" className="icon python" />,
+    //   <FaTools key="jenkins" className="icon jenkins" />,
+    //   <FaAws key="aws" className="icon aws" />,
+    // ],
+    year: "15 Jan, 2025 - Present",
+  },
+  {
+    role: "Cybersecurity & Network Intern",
+    company: "Palo Alto Networks | On-Site",
+    description: (
+      <>
+        <p>- Gained foundational knowledge in cybersecurity and networking, including threat prevention and firewall fundamentals.</p>
+        <p>- Hands-on experience in security tools, real-world use cases, and network infrastructure concepts.</p>
+      </>
+    ),
+    // skills: [
+    //   <FaTools key="cyber" className="icon jenkins" />, // You can replace icon if needed
+    // ],
+    year: "June 2024 - July 2024",
   },
 ];
 
@@ -70,11 +85,11 @@ const Experience = () => {
                 <span className="year">{item.year}</span>
                 <div className="description">{item.description}</div>
               </div>
-              <div className="skill-icons">
+              {/* <div className="skill-icons">
                 {item.skills.map((icon, idx) => (
                   <span key={idx} className="skill-icon">{icon}</span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {
-  FaDocker, FaAws, FaLinux, FaGit, FaPython, FaTools,
+  FaDocker, FaAws, FaLinux, FaGit, FaPython, FaTools, FaReact,
 } from 'react-icons/fa';
 import { SiKubernetes, SiTerraform } from 'react-icons/si';
 import './Skills.css';
@@ -8,6 +8,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const skillIcons = [
+  <FaReact key="react" color="#61DBFB" />,
   <FaDocker key="docker" color="#0db7ed" />,
   <SiKubernetes key="k8s" color="#326ce5" />,
   <SiTerraform key="terraform" color="#623ce4" />,
