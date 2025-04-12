@@ -7,7 +7,12 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: "*", // or restrict to frontend URL like "https://yourfrontend.vercel.app"
+  methods: ["POST"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // 📨 Send Contact Email + Auto Reply
@@ -65,5 +70,5 @@ app.get("/download-cv", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on https://render.com/docs/web-services#port-binding:${PORT}`);
 });
