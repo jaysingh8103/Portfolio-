@@ -81,11 +81,11 @@ const Projects = () => {
                   <FaExternalLinkAlt /> Live Demo
                 </a>
               )}
-              {p.github && (
-                <a href={p.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub /> GitHub
-                </a>
-              )}
+              {/* {p.github && (
+                // <a href={p.github} target="_blank" rel="noopener noreferrer">
+                //   <FaGithub /> GitHub
+                // </a>
+              )} */}
             </div>
 
             <motion.div

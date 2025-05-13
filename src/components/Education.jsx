@@ -9,7 +9,7 @@ const educationData = [
     institute: "Medi-Caps University , Indore",
     duration: "2021 - 2025",
     degree: "B.Tech. - Computer Science & Engineering",
-    score: "CGPA: 7 / 10",
+    score: "CGPA: 7.8 / 10",
   },
   {
     institute: "Narmada Valley Int’l School, Barwaha",

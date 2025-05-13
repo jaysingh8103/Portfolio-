@@ -12,7 +12,7 @@ const experienceData = [
       <>
         <p>- Built an automated code optimization and error detection tool using Python to improve code quality and reduce manual effort.</p>
         <p>- Gained practical experience with AWS, exploring cloud infrastructure and deployment concepts.</p>
-        <p>- Strengthened understanding of DevOps principles including CI/CD, containerization, and infrastructure automation.</p>
+        <p>- Strengthened understanding of DevOps principles including CI/CD, containerization.</p>
         <p>- Started writing shell and Python scripts to automate routine tasks and system operations, improving internal tool reliability.</p>
       </>
     ),
@@ -21,7 +21,7 @@ const experienceData = [
     //   <FaTools key="jenkins" className="icon jenkins" />,
     //   <FaAws key="aws" className="icon aws" />,
     // ],
-    year: "15 Jan, 2025 - Present",
+    year: "Feb 2025 to May 2025",
   },
   {
     role: "Cybersecurity & Network Intern",
